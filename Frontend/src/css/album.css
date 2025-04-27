@@ -1,0 +1,42 @@
+.album-container {
+    padding: 20px;
+  }
+  
+  .multiple-output-containers {
+    max-height: 80vh; /* Adjust the height as needed */
+    overflow-y: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Space between images */
+  }
+  
+  .container-output {
+    flex: 1 0 21%; /* Adjust width as needed */
+    box-sizing: border-box;
+    margin: 10px;
+  }
+  
+  .preview-output {
+    position: relative;
+  }
+  
+  .preview-output-img {
+    width: 100%;
+    height: 200px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensure images maintain aspect ratio and cover the entire area */
+    display: block;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #00E8F8;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  

@@ -1,0 +1,113 @@
+/* Center the form and make it responsive */
+.signupform {
+    border: 2px solid #f1f1f1;
+    z-index: 9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 440px;
+    
+}
+
+.signup-text {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .signup-text a {
+    color: #00E8F8;
+    text-decoration: none;
+  }
+  
+  .signup-text a:hover {
+    text-decoration: underline;
+  }
+  
+.signupform h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #000;
+    text-align: center;
+}
+
+/* Add styles to the form container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=email],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=email]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #16c2d1;
+    color: #000000;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.form-container .btn:hover {
+    opacity: 0.8;
+}
+
+.form-container .remember-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.form-container .remember-container input {
+    margin-right: 10px;
+}
+
+.form-container p {
+    margin-top: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .signupform {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+    }
+
+    .header__nav-link {
+        padding: 1rem;
+    }
+}
+
+.message{
+    color: white;
+}

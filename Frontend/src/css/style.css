@@ -1,0 +1,689 @@
+/* Main Design applied to all pages */
+body {
+    background-image: url('../../public/Images/Image-01.jpg'); /* Using Main Image as background */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000;
+    color: var(--bricks-color-zsakeo);
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header bar showing logo, login and signup buttons */
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header__menu-bar {
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    margin-left: 30px;
+}
+
+.header__nav {
+    padding: 2rem 0;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 2rem;
+}
+
+@media (hover: hover) {
+    .header__nav-link:hover {
+        color: #aaf8f8;
+        font-weight: 400;
+    }
+}
+
+#header__logo-box {
+    /* float: left; */
+    padding-left: 30px;
+    /* align-items: right; */
+}
+
+.header__nav-link--active {
+    color: #16c2d1;
+    font-weight: 700;
+}
+
+/* signup button in header */
+.sign-up-button {
+    background-color: #16c2d1;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin-right: 20px;
+}
+
+/* login button in header */
+.login-button {
+    background-color: #16c2d1;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px 16px;
+    margin-right: 20px;
+    margin-left: 800px;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.maintext {
+    z-index: 4;
+    align-items: flex-start;
+    display: inline-block;
+    width: 100%;
+    margin-left: 60px;
+    max-width: 500px;
+    animation: slideInFromLeft 2s ease-in-out;
+}
+
+.text1 {
+    /* margin-top: 1%; */
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #e8e8e8;
+    font-size: clamp(1.3625rem, 0.1717rem + 4.863vw, 2.45rem);
+}
+
+h1 {
+    line-height: 1.2;
+    margin: 0;
+    text-rendering: optimizelegibility;
+}
+
+.text2 {
+    line-height: 1.5;
+    color: #9094a6;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 1rem;
+    /* margin-bottom: 1.5rem; */
+    margin-bottom: 4%;
+}
+
+.text3 {
+    /* line-height: 1.5; */
+    color: #c7c9d2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#text3 {
+    margin-bottom: 8%;
+}
+
+.t1 {
+    background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.t2 {
+    background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main-image {
+    margin-right: 10px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    display: inline-block;
+}
+
+.image-generation-btn {
+    text-decoration: none;
+    border-color: #242121;
+    border-radius: 10px;
+    margin-left: 110px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+    background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%);
+}
+
+.footer {
+    width: 1260px;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #16c2d1;
+}
+
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    overflow-x: hidden;
+    padding-top: 20px;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    border-color: #16c2d1;
+    background: linear-gradient(90deg, #000000 98%, #16c2d1 100%);
+}
+
+.logo-generate-page {
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.logo-generate-page img {
+    width: 100px;
+    margin-left: 20px;
+    /* Adjust the logo width */
+}
+
+.sidebar a {
+    padding: 8px 12px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #16c2d1;
+    /* Hover background color */
+}
+
+.sidebar h3 {
+    margin: 10px 0;
+    padding-left: 16px;
+    font-size: 16px;
+    background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text
+        /* Heading color */
+}
+
+.dimension-button,
+.imagesnum-button,
+.slidercontainer {
+    margin: 10px 0;
+    padding-left: 16px;
+}
+
+#imagesnum-button button {
+    width: 50px;
+}
+
+.dimension-button button,
+.imagesnum-button button {
+    margin-bottom: 5px;
+    display: inline-block;
+    width: 100px;
+    padding: 5px 10px;
+    background-color: #ffffff;
+    /* Button background color */
+    border: none;
+    color: #16c2d1;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dimension-button button:hover,
+.imagesnum-button button:hover {
+    background-color: #aaf8f8;
+    /* Hover background color */
+}
+
+.slidercontainer input[type="range"] {
+    -webkit-appearance: none;
+    width: 90%;
+    height: 10px;
+    border-radius: 5px;
+    background: #ffffff;
+    margin-bottom: 40px;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 8px;
+    height: 15px;
+    background: #16c2d1;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #16c2d1;
+    cursor: pointer;
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Add new styles for the menu icon and responsive sidebar */
+.menu-icon {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .sidebar.open {
+        width: 250px;
+    }
+
+    .text-center {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+}
+
+
+
+/* Signup for on Signup Page */
+.signupform {
+    border: 2px solid #f1f1f1;
+    z-index: 9;
+    top: 5%;
+    position: absolute;
+    font-size: 8px;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 18%;
+    animation: slideInFromUp 1s ease-in-out;
+}
+
+@keyframes slideInFromUp {
+    0% {
+        transform: translatey(-100%);
+    }
+
+    100% {
+        transform: translatey(0);
+    }
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    font-size: 10px;
+    border: 2px solid #f1f1f1;
+    z-index: 9;
+    top: 16%;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    margin-right: 20px;
+    margin-left: 75%;
+    animation: slideInFromUp 1s ease-in-out;
+
+}
+
+.form-popup h1,
+.signupform h1 {
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* Full-width input fields */
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 90%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #aaf8f8;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    /* opacity: 0.9; */
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: red;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 0.8;
+}
+
+.text-center {
+    top: 30%;
+    margin-left: 28%;
+    /* margin: auto; */
+    /* width: 50%; */
+    /* padding: 30px; */
+}
+
+.text-center h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: 50px;
+    font-family: Cascadia Mono;
+    /* margin: auto; */
+    /* width: 50%; */
+    /* padding: 50px; */
+    color: #fff;
+}
+
+.multiple-forms {
+    margin-top: -20px;
+    margin-left: 50px;
+    display: flex;
+}
+
+.form-input-color {
+    position: relative;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+}
+
+#favcolor {
+    width: 150px;
+    height: 150px;
+    border-color: #000000;
+    /* margin-bottom: 20px; */
+    /* /* padding: 10px;  */
+
+}
+
+.form-input {
+    position: relative;
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.form-input input {
+    display: none;
+}
+
+.form-input label,
+.form-input-color label {
+    display: block;
+    width: 60%;
+    height: 45px;
+    margin-top: 10px;
+    /* margin-left: 5%; */
+    margin-bottom: 20%;
+    line-height: 50px;
+    text-align: center;
+    background: #66babc;
+    color: #fff;
+    font-size: 12px;
+    text-transform: Uppercase;
+    font-weight: 400;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.preview {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;
+    border: solid 1px #fff;
+    position: relative;
+    /* border-color: #fff; */
+}
+
+.preview-img {
+    /* display: none;  */
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+    /* background-color: #ffffff;  */
+    /* margin: 33%; */
+}
+
+#preview-img1,
+#preview-img2 {
+    width: 50px;
+    height: 50px;
+    /* background-color: #ffffff;  */
+    margin: 33%;
+}
+
+.form-input h5,
+.form-input-color h5 {
+    color: #ffffff;
+    margin-left: -8px;
+}
+
+#generate-btn {
+    border-color: #242121;
+    border-radius: 10px;
+    position: absolute;
+    left: 51%;
+    bottom: 8%;
+    color: black;
+    font-family: "Cascadia Mono";
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 15px;
+    /* background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%); */
+    background-color: #ffffff;
+}
+
+.image-back {
+    opacity: 0.4;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    width: 70%;
+    height: auto;
+    z-index: -1;
+}
+
+/* .close-container {
+    width: 576px;
+    margin: 0 auto;
+
+} */
+
+.close {
+    display: flex;
+    position: absolute;
+    margin: 15px;
+    right: 5px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #fff;
+    top: 5px;
+}
+
+.RememberMe-text {
+    margin-bottom: 15px;
+}
+
+/* Dialog */
+
+/* .dialog {
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    float: left;
+    height: 200px;
+    margin: 20px;
+    position: relative;
+    width: 150px;
+} */
+
+.loading {
+    position: absolute;
+    z-index: 1;
+    top: 25%;
+    left: 22%;
+}
+
+.load-icon {
+    position: absolute;
+    z-index: 1;
+    top: 63%;
+    left: 50%;
+}
+
+.account{
+    position: absolute;
+    z-index: 2;
+    left: 95%;
+    top: 4%;
+}
+
+@font-face {
+    font-family: 'AgencyFont'; /* Quotes are recommended for font names with spaces or special characters */
+    src: url('AGENCYR.TTF') format('truetype');
+}
+
+#output-heading {
+    font-family: 'AgencyFont', Cascadia Mono; /* Provide a fallback font */
+    margin-top: 5%;
+    margin-bottom: 8%;
+    margin-left: 10%;
+    font-size: 80px;
+    color: #fff;
+    font-weight: 100;
+}
+
+#output-options-container{
+    display: flex;
+    /* position: absolute;
+    z-index: 1; */
+    width: 80%;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 20%;
+    /* margin-left: 3px; */
+    background: #66babc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.output-options{
+    /* position: absolute;
+    z-index: 2; */
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    margin-left: 4px;
+    padding: 10px;
+}
+
+.preview-output {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: solid 1px #fff;
+    position: relative;
+}
+
+.preview-output-img {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.container-output {
+    position: relative;
+    width: 300px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.multiple-output-containers {
+    margin-top: -20px;
+    display: flex;
+}
+
+.output-text-center {
+    top: 30%;
+    margin-left: 20%;
+    /* margin: auto; */
+    /* width: 50%; */
+    /* padding: 30px; */
+}

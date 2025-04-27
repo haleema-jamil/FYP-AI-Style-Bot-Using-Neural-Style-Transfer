@@ -1,0 +1,377 @@
+/* Main Design applied to all pages */
+body {
+    color: var(--bricks-color-zsakeo);
+    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: auto;
+}
+.output-wrapper {
+    position: relative;
+    min-height: 100vh;
+  }
+  
+  .output-background {
+    background-image: url('../pics/Image-01.jpg'); /* Ensure the path to your image is correct */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    z-index: -1; /* Ensure the background is behind other content */
+  }
+  
+
+
+  /* Existing CSS rules remain unchanged */
+  
+/* Header bar showing logo, login and signup buttons */
+.header {
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.header__menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.header__logo-box {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.header__logo-box img {
+    height: 100px; /* Adjust as needed */
+}
+
+.header__nav {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header__nav-item {
+    margin: 0 1rem;
+}
+
+.header__nav-link {
+    text-decoration: none;
+    font-weight: 300;
+    color: #ffffff;
+    padding: 1rem;
+    display: block;
+}
+
+@media (hover: hover) {
+    .header__nav-link:hover {
+        color: #aaf8f8;
+        font-weight: 400;
+    }
+}
+
+.header__nav-link--active {
+    color: #16c2d1;
+    font-weight: 700;
+}
+
+/* Signup button in header */
+.sign-up-button {
+    background-color: #16c2d1;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+
+/* Login button in header */
+.login-button {
+    background-color: #16c2d1;
+    color: #000000;
+    border-radius: 10px;
+    padding: 10px 16px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+ 
+
+    .header__logo-box img {
+        height: 80px; /* Adjust as needed for smaller screens */
+    }
+
+    .header__nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .header__nav-item {
+        margin: 0.5rem 0;
+    }
+
+    .login-button,
+    .sign-up-button {
+        margin: 0.5rem;
+        width: 80%; /* Make buttons fill most of the width on small screens */
+    }
+}
+
+.maintext {
+    z-index: 4;
+    align-items: flex-start;
+    display: inline-block;
+    width: 100%;
+    margin-left: 60px;
+    max-width: 500px;
+    animation: slideInFromLeft 2s ease-in-out;
+}
+
+.text1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #e8e8e8;
+    font-size: clamp(1.3625rem, 0.1717rem + 4.863vw, 2.45rem);
+}
+
+h1 {
+    line-height: 1.2;
+    margin: 0;
+    text-rendering: optimizelegibility;
+}
+
+.text2 {
+    line-height: 1.5;
+    color: #9094a6;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 1rem;
+    margin-bottom: 4%;
+}
+
+.text3 {
+    color: #c7c9d2;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#text3 {
+    margin-bottom: 8%;
+}
+
+.t1 {
+    background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.t2 {
+    background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main-image {
+    margin-right: 10px;
+    padding-bottom: 100px;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -25%);
+}
+
+.image-generation-btn {
+    text-decoration: none;
+    border-color: #242121;
+    border-radius: 10px;
+    margin-left: 110px;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 15px;
+    background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%);
+}
+
+.footer {
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    background-color: #16c2d1;
+}
+
+.dropdown-content button{
+    width: 100px;
+    padding: 5px;
+    margin: 0.5px;
+    color: #ffffff;
+    border-color: #ffffff;
+    border-radius: 5px;
+    background-color:  #66babc;
+}
+
+.download-dropdown {
+    display: block;
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .sidebar.open {
+        width: 250px;
+    }
+
+    .text-center {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .multiple-forms {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-input, .form-input-color {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .output-text-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .multiple-output-containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-output {
+        width: 90%;
+        margin: 10px 0;
+    }
+}
+
+.text-center {
+    top: 30%;
+    margin-left: 28%;
+}
+
+.text-center h1 {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    font-size: 50px;
+    font-family: Cascadia Mono;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'AgencyFont';
+    src: url('AGENCYR.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+#output-heading {
+    background: linear-gradient(81.02deg, #16c2d1 -39.48%, #aaf8f8 130.8%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-family: 'AgencyFont', 'Cascadia Mono', monospace;
+    margin-top: 2%;
+    margin-bottom: 5%;
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.output-options-container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Ensure the container centers its children */
+    width: 100%;
+    height: 50px; /* Ensure the container has a defined height */
+    margin-top: 10px;
+    background-color: #66babc !important; /* Force the background color */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.output-options {
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+    padding: 10px;
+    display: block;
+}
+
+.preview-output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 20px;
+    border: solid 1px #fff;
+    position: relative;
+}
+
+.preview-output-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-output {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    /* margin: 20px; */
+    padding: 10px;
+}
+
+.multiple-output-containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.output-text-center {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
